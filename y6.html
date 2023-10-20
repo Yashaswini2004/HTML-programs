@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Page</title>
+<style>
+div{
+background-color: teal;
+margin : 30%;
+margin-top: 10%
+}
+label {
+color: yellow;
+}
+body {
+font-family: Arial, sans-serif;
+}
+.heading {
+font-size: 24px;
+margin-bottom: 20px;
+}
+.submit-btn {
+background-color: red;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+/* align-content: right; */
+/* display: flex;
+justify-content: center;
+align-items: center; */
+}
+.cancel-btn {
+background-color: green;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+margin-right: 10px;
+/* display: flex;
+justify-content: center;
+align-items: center; */
+}
+.headings{
+background-color: orange;
+margin: 0;
+align-items: center;
+}
+.buttons{
+margin: 0;
+background-color: orange;
+border: 1px;
+align-items: center;
+padding-left: 65%;
+}
+</style>
+</head>
+<body>
+<div>
+<div class="headings">
+<h1> sign up </h1>
+</div>
+<form action="submit_form.php" method="post">
+<label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName" required><br><br>
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName" required><br><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" required><br><br>
+<label>Gender:</label>
+<input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female">
+<label for="female">Female</label><br><br>
+<label for="country">Country:</label>
+<select id="country" name="country" required>
+<option value="USA">USA</option>
+<option value="Canada">Canada</option>
+<option value="UK">UK</option>
+<!-- Add more countries here -->
+</select><br><br>
+<label for="email">E-mail:</label>
+<input type="email" id="email" name="email" required><br><br>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" required><br><br>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br><label for="confirmPassword">Confirm Password:</label>
+<input type="password" id="confirmPassword" name="confirmPassword"
+required><br><br>
+<input type="checkbox" id="terms" name="terms" required>
+<label for="terms">I Agree to the Terms of use</label><br><br>
+<div class="buttons">
+<button class="submit-btn">Submit</button>
+<button class="cancel-btn">Cancel</button>
+</div>
+</form>
+</div>
+</body>
+</html>

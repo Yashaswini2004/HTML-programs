@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Vowel and reverse</title>
+</head>
+<body>
+<script type="text/javascript">
+var i;
+var str=prompt("Enter the input: ");
+if(isNaN(str))
+{
+str=str.toUpperCase();
+for(var i=0;i<str.length;i++)
+{
+var ch=str.charAt(i);
+if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U')
+{
+break;
+}
+}
+if(i<str.length)
+{
+alert("The vowel found at the position: "+(i+1));
+}
+else
+{
+alert("The vowel doesnot found");
+}
+}
+else
+{
+var num,rev=0,remainder;
+num=parseInt(str);
+while(num!=0)
+{
+remainder=num%10;
+num=parseInt(num/10);
+rev=rev*10+remainder;
+}
+alert("the reversed number is: "+rev);
+}
+</script>
+</body>
+</html>

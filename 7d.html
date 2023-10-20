@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+class CompanyName
+{
+constructor()
+{
+this.company="CIT gubbi";
+}
+}
+class Employee extends CompanyName
+{
+constructor(id,name)
+{
+super();
+this.id=id;
+this.name=name;
+}
+}
+var emp=new Employee(121,"Yashaswini");
+document.write (emp.id+" "+" "+emp.name+" "+emp.company);
+</script>
+</body>
+</html>

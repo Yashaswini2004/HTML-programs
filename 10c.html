@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var regex=/(\bcar\w*)/g;
+var str="The words begins with car:cart,cartoon,carroot the words ends with car:oscar,supercar";
+var replacement="<b>$1</b>"
+var result=str.replace(regex,replacement);
+document.write(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>fib.html</title>
+</head>
+<body style="background-color:yellow">
+<h3 style="text-align:center;color:red">The program to find fibonacci series</h3>
+<script type="text/javascript">
+var limit=prompt("Enter the limit:"+"<br>");
+var f1=0;
+var f2=1;
+document.write("The fibonacci series:"+"<br>");
+document.write("",f1,"<br>");
+document.write("",f2,"<br>");
+var i,f3;
+for(i=2;i<limit;i++)
+{
+f3=f1+f2;
+document.write("",f3,"<br>");
+f1=f2;
+f2=f3;
+}
+</script>
+</body>
+</html>

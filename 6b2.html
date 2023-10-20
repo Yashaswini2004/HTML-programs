@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Vowel and reverse</title>
+</head>
+<body>
+<script>
+var i;
+var str=prompt("Enter your input: ");
+if(isNaN(str))
+{
+str=str.toUpperCase();
+for(i=0;i<str.length;i++)
+{
+var c=str.charAt(i);
+if(c=='A'||c=='E'||c=='I'||c=='O'||c=='U')
+{
+break;
+}
+}
+if(i<str.length)
+{
+alert("the left most vowel found at: "+(i+1));
+}
+else
+{
+alert("The vowel doesnot found");
+}
+}
+else
+{
+var num,rev=0,remainder;
+num=parseInt(str);
+while(num!=0)
+{
+remainder=num%10;
+num=parseInt(num/10);
+rev=rev*10+remainder;
+}
+alert("The reverse of "+str+"is"+" "+rev);
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8">
+<html xmlns="https:///www.w3.org/1999/xhtml">
+<head>
+<title>USN.html</title>
+<script type="text/javascript">
+function checkUSN()
+{
+var str=document.getElementById("usn").value;
+var result=str.search(/^[1-4]{1}[A-Z]{2}\d{2}[A-Z]{2}\d{3}$/);
+if(result!=0)
+{
+alert("Enter usn("+str+") is not in the form.Enter the valid usn");
+}
+else
+{
+alert("Entered usn("+str+") is in the correct form");
+}
+</script>
+</head>
+<body style="background-color:yellow;">
+<h3 style="text-align:center; color:red;">The program includes xhtml to collect student student information</h3>
+<h3 style="color:purple">Student information</h3>
+<form name="my form" method="post">
+<p style="color:purple">Enter USN:</p>
+<input type="text" id="usn" size=15>
+<br></br>
+<input type="button" value="submit" onclick="checkUSN()">
+<input type="reset" value="clear">
+</form>
+</body>
+</html>
+
+
+

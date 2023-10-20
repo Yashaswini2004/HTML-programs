@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Array</title>
+<style>
+body
+{
+padding-top:20px;
+}
+</style>
+</head>
+<body>
+<form>
+<input type="text" id="text1">
+<input type="button" id="button1" value="add" onclick="add_element_to_array()">
+<input type="button" id="button2" value="display" onclick="display_array()">
+</form>
+<div id="result"></div>
+<script>
+var x=0;
+var array=Array();
+function add_element_to_array()
+{
+array[x]=document.getElementById("text1").value;
+alert(array[x]+" "+"added at the index"+" "+x);
+x++;
+document.getElementById("text1").value;
+}
+function display_array()
+{
+var e="<br>";
+var i;
+for(i=0;i<array.length;i++)
+{
+e+="Element"+i+"="+array[i]+"\n";
+}
+document.getElementById("result").innerHTML=e;
+}
+</script>
+</body>
+</html>

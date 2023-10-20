@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var regex=/(\bcar\w*)/g;
+var str="The words beginning with car:cartoon,cart,carrot,word ending with car:oscar,supercar";
+var replacement="<b>$1</b>";
+var result=str.replace(regex,replacement);
+document.write(result);
+</script>
+</body>
+</html>
